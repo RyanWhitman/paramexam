@@ -1,0 +1,20 @@
+{
+	"name": "ryanwhitman/paramexam",
+	"description": "A package for sanitizing and validating parameters.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Ryan Whitman",
+			"email": "ryanawhitman@gmail.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=7.0.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"RyanWhitman\\ParamExam\\": "src/"
+		}
+	}
+}
