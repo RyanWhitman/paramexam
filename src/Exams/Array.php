@@ -12,7 +12,7 @@ namespace RyanWhitman\ParamExam\Exams;
 /**
  * Attempt to get an array.
  */
-class Array extends \ParamExam\Exam {
+class Array extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * @inheritDoc

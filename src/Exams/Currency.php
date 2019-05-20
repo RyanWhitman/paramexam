@@ -14,7 +14,7 @@ use RyanWhitman\ParamExam\Helpers;
 /**
  * Attempt to get a currency.
  */
-class Currency extends \ParamExam\Exam {
+class Currency extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * The minimum value or false if there is no minimum value.
