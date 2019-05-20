@@ -12,7 +12,7 @@ namespace RyanWhitman\ParamExam\Exams;
 /**
  * Attempt to get a boolean.
  */
-class Boolean extends \ParamExam\Exam {
+class Boolean extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * If strict is true, the value must be true or false. Otherwise, similar values may be used (0, 1, n, y, etc.).

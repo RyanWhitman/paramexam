@@ -14,7 +14,7 @@ use RyanWhitman\ParamExam\Helpers;
 /**
  * Attempt to get an alphanumeric value.
  */
-class Alphanumeric extends \ParamExam\Exam {
+class Alphanumeric extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * The case to check for. See the isAlphanumeric method.
