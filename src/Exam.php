@@ -18,30 +18,35 @@ abstract class Exam {
 
 	/**
 	 * Is a value required?
+	 *
 	 * @var boolean
 	 */
 	private $isReqd;
 
 	/**
 	 * If the value doesn't exists, what is the default value?
+	 *
 	 * @var mixed
 	 */
 	private $default;
 
 	/**
 	 * Can an empty string be provided?
+	 *
 	 * @var boolean
 	 */
 	private $emptyStringable;
 
 	/**
 	 * The character mask, or false if strings should not be trimmed.
+	 *
 	 * @var string|false
 	 */
 	protected $trimString = ' ';
 
 	/**
 	 * Create a new Exam instance.
+	 *
 	 * @param boolean $isReqd Is a value required?
 	 * @param mixed $default If the value doesn't exists, what is the default value?
 	 * @param boolean $emptyStringable Can an empty string be provided?
@@ -60,6 +65,7 @@ abstract class Exam {
 
 	/**
 	 * A shortcut method for creating a new exam instance that is required.
+	 *
 	 * @return self The exam instance.
 	 */
 	public static function reqd(): self {
@@ -68,6 +74,7 @@ abstract class Exam {
 
 	/**
 	 * A shortcut method for creating a new exam instance that is optional.
+	 *
 	 * @return self The exam instance.
 	 */
 	public static function opt(): self {
@@ -76,6 +83,7 @@ abstract class Exam {
 
 	/**
 	 * A shortcut method for creating a new exam instance that has a default value.
+	 *
 	 * @param mixed $default The default value.
 	 * @return self The exam instance.
 	 */
@@ -85,6 +93,7 @@ abstract class Exam {
 
 	/**
 	 * A shortcut method for creating a new exam instance that can contain an empty string.
+	 *
 	 * @return self The exam instance.
 	 */
 	public static function emptyStringable(): self {
@@ -93,6 +102,7 @@ abstract class Exam {
 
 	/**
 	 * Run the exam.
+	 *
 	 * @param mixed $val The value to examine.
 	 * @return Result The result.
 	 */
@@ -145,6 +155,7 @@ abstract class Exam {
 
 	/**
 	 * A shortcut method for creating and running the exam.
+	 *
 	 * @param mixed $val The value to examine.
 	 * @return Result The result.
 	 */
@@ -154,10 +165,11 @@ abstract class Exam {
 
 	/**
 	 * The param filter.
+	 *
 	 * @param mixed $val The value to filter.
 	 * @param Result $result A Result instance.
 	 */
-	protected function filter($val, Result $result) {}
+	protected function filter($val, $result) {}
 
 	/**
 	 * A magic method that allows any method to be called non-statically.

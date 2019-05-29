@@ -19,36 +19,42 @@ class Result {
 
 	/**
 	 * The exam.
+	 *
 	 * @var Exam
 	 */
 	private $exam;
 
 	/**
 	 * Whether or not the exam passed.
+	 *
 	 * @var boolean
 	 */
 	private $passed = false;
 
 	/**
 	 * The exam error.
+	 *
 	 * @var string
 	 */
 	private $error = 'invalid';
 
 	/**
 	 * The successful value after passing an exam.
+	 *
 	 * @var mixed
 	 */
 	private $val;
 
 	/**
 	 * Whether or not a result has been finalized.
+	 *
 	 * @var boolean
 	 */
 	private $isFinal = false;
 
 	/**
 	 * Create a new Result instance.
+	 *
 	 * @param Exam $exam The exam this result is based on.
 	 */
 	public function __construct(Exam $exam) {
@@ -57,6 +63,7 @@ class Result {
 
 	/**
 	 * Get the exam this result is based on.
+	 *
 	 * @return Exam
 	 */
 	public function getExam(): Exam {
@@ -65,6 +72,7 @@ class Result {
 
 	/**
 	 * Has this result been finalized?
+	 *
 	 * @return boolean
 	 */
 	public function isFinal(): bool {
@@ -73,6 +81,7 @@ class Result {
 
 	/**
 	 * Ensure the result has not already been finalized.
+	 *
 	 * @throws Exception Throws an exception if the result has already been finalized.
 	 */
 	private function ensureNotAlreadyFinalized() {
@@ -101,6 +110,7 @@ class Result {
 
 	/**
 	 * Set an exam as having failed.
+	 *
 	 * @param mixed $error The error.
 	 */
 	public function setFailed($error = NULL) {
@@ -112,6 +122,7 @@ class Result {
 
 	/**
 	 * Did the exam pass?
+	 *
 	 * @return boolean
 	 */
 	public function passed(): bool {
@@ -120,6 +131,7 @@ class Result {
 
 	/**
 	 * Get the exam error.
+	 *
 	 * @return mixed The error or NULL if the exam passed.
 	 */
 	public function getError() {
@@ -128,6 +140,7 @@ class Result {
 
 	/**
 	 * Get the exam value.
+	 *
 	 * @return mixed The value or NULL if the exam failed.
 	 */
 	public function getVal() {

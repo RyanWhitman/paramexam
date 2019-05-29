@@ -18,12 +18,14 @@ class Integer extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * The minimum value or false if there is no minimum value.
+	 *
 	 * @var int|false
 	 */
 	public $minVal = false;
 
 	/**
 	 * The maximum value or false if there is no maximum value.
+	 *
 	 * @var int|false
 	 */
 	public $maxVal = false;

@@ -18,18 +18,21 @@ class Year extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * The year length.
+	 *
 	 * @var integer
 	 */
 	public $length = 4;
 
 	/**
 	 * The minimum year or false if there is no minimum year.
+	 *
 	 * @var int|false
 	 */
 	public $minYear = false;
 
 	/**
 	 * The maximum year or false if there is no maximum year.
+	 *
 	 * @var int|false
 	 */
 	public $maxYear = false;

@@ -18,18 +18,21 @@ class Text extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * Should the trimFull method be run?
+	 *
 	 * @var boolean
 	 */
 	public $trimFull = false;
 
 	/**
 	 * The minimum length or false if there is no minimum length.
+	 *
 	 * @var int|false
 	 */
 	public $minLength = false;
 
 	/**
 	 * The maximum length or false if there is no maximum length.
+	 *
 	 * @var int|false
 	 */
 	public $maxLength = false;

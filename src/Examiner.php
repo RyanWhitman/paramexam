@@ -20,18 +20,21 @@ class Examiner {
 
 	/**
 	 * The input.
+	 *
 	 * @var array
 	 */
 	private $input = [];
 
 	/**
 	 * The exam results.
+	 *
 	 * @var array
 	 */
 	private $results = [];
 
 	/**
 	 * Create a new Examiner instance.
+	 *
 	 * @param array $input An array of input that will be examined.
 	 */
 	public function __construct(array $input) {
@@ -40,6 +43,7 @@ class Examiner {
 
 	/**
 	 * A shortcut method for creating a new Examiner instance.
+	 *
 	 * @param array $input An array of input that will be examined.
 	 * @return self The examiner instance.
 	 */
@@ -49,6 +53,7 @@ class Examiner {
 
 	/**
 	 * Convert a parameter to a different name.
+	 *
 	 * @param string $fromParam The existing parameter name.
 	 * @param string $toParam The new parameter name.
 	 * @param boolean $force If false, the parameter will only be converted if the new name doesn't already exist.
@@ -64,6 +69,7 @@ class Examiner {
 
 	/**
 	 * Run an exam.
+	 *
 	 * @param string $param The parameter name to run the exam on.
 	 * @param string $exam The exam class name.
 	 * @param boolean $isReqd Is the value required?
@@ -91,6 +97,7 @@ class Examiner {
 
 	/**
 	 * A shortcut method for running an exam on a required parameter.
+	 *
 	 * @see run() method
 	 */
 	public function reqd(string $param, string $exam): self {
@@ -99,6 +106,7 @@ class Examiner {
 
 	/**
 	 * A shortcut method for running an exam on an optional parameter.
+	 *
 	 * @see run() method
 	 */
 	public function opt(string $param, string $exam): self {
@@ -107,6 +115,7 @@ class Examiner {
 
 	/**
 	 * A shortcut method for running an exam on a parameter that has a default value.
+	 *
 	 * @see run() method
 	 */
 	public function default(string $param, string $exam, $default): self {
@@ -115,6 +124,7 @@ class Examiner {
 
 	/**
 	 * A shortcut method for running an exam on a parameter that allows empty strings.
+	 *
 	 * @see run() method
 	 */
 	public function emptyStringable(string $param, string $exam): self {
@@ -123,6 +133,7 @@ class Examiner {
 
 	/**
 	 * Have all of the exams passed?
+	 *
 	 * @return boolean
 	 */
 	public function passed(): bool {
@@ -135,6 +146,7 @@ class Examiner {
 
 	/**
 	 * Get all of the errors associated with this Examiner instance.
+	 *
 	 * @return array The errors.
 	 */
 	public function getErrors(): array {
@@ -149,6 +161,7 @@ class Examiner {
 
 	/**
 	 * Get all of the successful values associated with this Examiner instance.
+	 *
 	 * @return array The values.
 	 */
 	public function getVals(): array {

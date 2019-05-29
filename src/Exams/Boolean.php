@@ -16,6 +16,7 @@ class Boolean extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * If strict is true, the value must be true or false. Otherwise, similar values may be used (0, 1, n, y, etc.).
+	 *
 	 * @var boolean
 	 */
 	public $strict = false;

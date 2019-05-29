@@ -16,6 +16,7 @@ class Url extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * The validation flag.
+	 *
 	 * @var null|string
 	 */
 	public $validateFlag = NULL;

@@ -18,6 +18,7 @@ class Alphanumeric extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * The case to check for. See the isAlphanumeric method.
+	 *
 	 * @var string
 	 */
 	public $case = 'ci';

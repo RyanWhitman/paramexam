@@ -18,6 +18,7 @@ class Timestamp extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * The output format.
+	 *
 	 * @var string
 	 */
 	public $outputFormat = 'Y-m-d H:i:s';

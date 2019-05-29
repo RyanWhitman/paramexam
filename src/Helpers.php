@@ -53,6 +53,7 @@ abstract class Helpers {
 
 	/**
 	 * Is the value an empty string?
+	 *
 	 * @return boolean
 	 */
 	public static function isEmptyString($val): bool {
@@ -61,6 +62,7 @@ abstract class Helpers {
 
 	/**
 	 * Is the value NULL or an empty string?
+	 *
 	 * @return boolean
 	 */
 	public static function isNullOrEmptyString($val): bool {
@@ -69,6 +71,7 @@ abstract class Helpers {
 
 	/**
 	 * Trim all whitespace.
+	 *
 	 * @return string
 	 */
 	public static function trimFull(string $str): string {
@@ -99,6 +102,7 @@ abstract class Helpers {
 
 	/**
 	 * Does the value only contain digits?
+	 *
 	 * @return boolean
 	 */
 	public static function containsOnlyDigits($val): bool {
@@ -107,6 +111,7 @@ abstract class Helpers {
 
 	/**
 	 * Is the value alphanumeric and does it match the correct case?
+	 *
 	 * @return boolean
 	 */
 	public static function isAlphanumeric(string $val, string $case = 'ci'): bool {
@@ -121,6 +126,7 @@ abstract class Helpers {
 
 	/**
 	 * Is the value an email address?
+	 *
 	 * @return boolean
 	 */
 	public static function isEmail($email): bool {
@@ -151,6 +157,7 @@ abstract class Helpers {
 
 	/**
 	 * Is the value a person's name?
+	 *
 	 * @return boolean
 	 */
 	public static function isPersonsName(string $val): bool {
@@ -159,6 +166,7 @@ abstract class Helpers {
 
 	/**
 	 * Determine whether or not a value is a timestamp.
+	 *
 	 * @param mixed $val The value to evaluate.
 	 * @return boolean
 	 */
@@ -168,6 +176,7 @@ abstract class Helpers {
 
 	/**
 	 * Determine whether or not the value is a valid currency.
+	 *
 	 * @param mixed $val The value to evaluate.
 	 * @param bool $allowNegative Whether or not a negative currency should be allowed.
 	 * @param bool $mustHave2Decimals Whether or not 2 decimals are required.

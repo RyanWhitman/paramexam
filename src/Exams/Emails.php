@@ -18,6 +18,7 @@ class Emails extends \RyanWhitman\ParamExam\Exam {
 
 	/**
 	 * Must all of the submitted email addresses be valid?
+	 *
 	 * @var boolean
 	 */
 	public $allValid = true;
