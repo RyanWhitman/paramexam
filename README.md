@@ -2,4 +2,4 @@
 A package for sanitizing and validating parameters.
 
 ## Current Version
-1.0.4
+1.1.0
