@@ -15,6 +15,20 @@ namespace RyanWhitman\ParamExam\Exams;
 class Url extends \RyanWhitman\ParamExam\Exam {
 
 	/**
+	 * The minimum length or false if there is no minimum length.
+	 *
+	 * @var int|false
+	 */
+	public $minLength = false;
+
+	/**
+	 * The maximum length or false if there is no maximum length.
+	 *
+	 * @var int|false
+	 */
+	public $maxLength = false;
+
+	/**
 	 * The validation flag.
 	 *
 	 * @var null|string
@@ -28,6 +42,15 @@ class Url extends \RyanWhitman\ParamExam\Exam {
 
 		// Prepare the value.
 		$val = trim(filter_var($val, FILTER_SANITIZE_URL));
+
+		// Ensure the value is of the correct length.
+		$length = strlen($val);
+		if (
+			($this->minLength !== false && $length < $this->minLength) ||
+			($this->maxLength !== false && $length > $this->maxLength)
+		) {
+			return $result->setFailed('invalid_length');
+		}
 
 		// Validate the URL.
 		if (filter_var($val, FILTER_VALIDATE_URL, $this->validateFlag))
